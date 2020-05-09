@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -27,13 +29,13 @@
       </div>
     </header>
     <main class="main">
-      <h1 class="title">Бэтмен</h1>
+      <h1 class="title animate__animated animate__shakeY">Бэтмен</h1>
       <small class="title-en">The Batman</small>
       <div class="info">
         <div class="movie-info">
           <span class="tag">Фильм</span>
           <span class="country">США, 2021 год</span>
-          <a href="#" class="play">Смотреть трейлер</a>
+          <a data-fancybox href="https://www.youtube.com/watch?v=cElcLipGNIA" class="play">Смотреть трейлер</a>
         </div>
         <a href="#" class="more">Подробнее</a>
       </div>
@@ -58,19 +60,19 @@
         <!-- /.short-info -->
         <div class="full-info">
           <nav class="tabs">
-            <a href="#" class="tabs-item tabs-item-active">Описание</a>
-            <a href="#" class="tabs-item">Рецензии</a>
-            <a href="#" class="tabs-item">Премьеры</a>
-            <a href="#" class="tabs-item">Актеры</a>
-            <a href="#" class="tabs-item">Награды</a>
-            <a href="#" class="tabs-item">Факты</a>
-            <a href="#" class="tabs-item">Сайты</a>
+            <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+            <a href="#reviews" class="tabs-item">Рецензии</a>
+            <a href="#premieres" class="tabs-item">Премьеры</a>
+            <a href="#actors" class="tabs-item">Актеры</a>
+            <a href="#awards" class="tabs-item">Награды</a>
+            <a href="#facts" class="tabs-item">Факты</a>
+            <a href="#sites" class="tabs-item">Сайты</a>
             <a href="#" class="tabs-item">
               <img src="img/icons/bookmark-icon.svg" alt="" class="bookmark-added">
             </a>
           </nav>
           <div class="full-content">
-            <div class="tabs-content">
+            <div class="tabs-content visible" id="about">
               <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах
                 издательства DC Comics.Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов
                 о Бэтмене. </p>
@@ -90,6 +92,24 @@
                 тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс
                 подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным
                 злодеем фильма.</p>
+            </div>
+            <div class="tabs-content" id="reviews">
+              <p class="text">Рецензии скоро будут</p>
+            </div>
+            <div class="tabs-content" id="premieres">
+              <p class="text">Премьеры скоро будут</p>
+            </div>
+            <div class="tabs-content" id="actors">
+              <p class="text">Актеры скоро будут</p>
+            </div>
+            <div class="tabs-content" id="awards">
+              <p class="text">Награды скоро будут</p>
+            </div>
+            <div class="tabs-content" id="facts">
+              <p class="text">Факты скоро будут</p>
+            </div>
+            <div class="tabs-content" id="sites">
+              <p class="text">Сайты скоро будут</p>
             </div>
             <div class="subscribe">
               <h3 class="subscribe-title">Подпишитесь на обновления</h3>
@@ -111,6 +131,9 @@
     </main>
   </div>
   <!-- /.container -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
